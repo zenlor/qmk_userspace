@@ -1,0 +1,3 @@
+# Atreus-like Ergodox EZ
+
+with a useless lefty gaming layer...

@@ -1,4 +1,10 @@
 {
     "userspace_version": "1.0",
-    "build_targets": []
+    "build_targets": [
+        "atreus:zenlor",
+        "ergodox_ez:zenlor",
+        "handwired:zl20",
+        "mechmini_v2/atreus",
+        "mechmini_v2/zenlor"
+    ]
 }
