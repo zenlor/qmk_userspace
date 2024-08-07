@@ -59,25 +59,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
   [BASE] = LAYOUT_ergodox(
-    LCTL(KC_E),     KC_1,      KC_2,   KC_3,    KC_4,      KC_5, KC_LBRACKET,
+    LCTL(KC_E),     KC_1,      KC_2,   KC_3,    KC_4,      KC_5, KC_LBRC,
     LCTL(KC_F),     KC_Q,      KC_W,   KC_E,    KC_R,      KC_T, KC_LCBR,
     LGUI(KC_G),     KC_A,      KC_S,   KC_D,    KC_F,      KC_G,
     LCTL(KC_C),     KC_Z,      KC_X,   KC_C,    KC_V,      KC_B, KC_LPRN,
-    LCTL(KC_SPACE), KC_ESCAPE, KC_TAB, KC_LGUI, KC_LSHIFT,
-                                                                       KC_LALT, KC_HOME,
-                                                                                KC_END,
-                                                            KC_BSPACE, KC_LCTL, MO(LOWER),
+    LCTL(KC_SPACE), KC_ESCAPE, KC_TAB, KC_LGUI, KC_LSFT,
+                                                           KC_LALT, KC_HOME,
+                                                                    KC_END,
+                                                KC_BSPC, KC_LCTL, MO(LOWER),
 
     // Right hand
-    KC_RBRACKET,    KC_6,     KC_7,     KC_8,     KC_9,      KC_0,      KC_F5,
-    KC_RCBR,        KC_Y,     KC_U,     KC_I,     KC_O,      KC_P,      LGUI(KC_GRAVE),
-                    KC_H,     KC_J,     KC_K,     KC_L,      KC_SCOLON, RCTL(KC_P),
-    KC_RPRN,        KC_N,     KC_M,     KC_COMMA, KC_DOT,    KC_SLASH,  RCTL(RSFT(KC_P)),
-    MO(RAISE),      KC_MINUS, KC_QUOTE, KC_ENTER, MO(LOWER),
+    KC_RBRC,    KC_6,     KC_7,     KC_8,     KC_9,      KC_0,    KC_F5,
+    KC_RCBR,    KC_Y,     KC_U,     KC_I,     KC_O,      KC_P,    LGUI(KC_GRAVE),
+                KC_H,     KC_J,     KC_K,     KC_L,      KC_SCLN, RCTL(KC_P),
+    KC_RPRN,    KC_N,     KC_M,     KC_COMMA, KC_DOT,    KC_SLSH,  RCTL(RSFT(KC_P)),
+    MO(RAISE),  KC_MINUS, KC_QUOTE, KC_ENTER, MO(LOWER),
 
     KC_PGUP,   KC_LCTL,
-    KC_PGDOWN,
-    KC_BSPACE, KC_LALT, KC_SPACE),
+    KC_PGDN,
+    KC_BSPC, KC_LALT, KC_SPACE),
 
 /* 1: Raise
  *
@@ -101,23 +101,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `--------------------'
  */
   [RAISE] = LAYOUT_ergodox(
-    KC_TRANSPARENT, KC_F1,       KC_F2,       KC_F3,   KC_F4,     KC_F5,   KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_EXLM,     KC_AT,       KC_UP,   KC_LCBR,   KC_RCBR, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_HASH,     KC_LEFT,     KC_DOWN, KC_RIGHT,  KC_DLR,
-    KC_TRANSPARENT, KC_LBRACKET, KC_RBRACKET, KC_LPRN, KC_RPRN,   KC_AMPR, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_ESCAPE,   KC_INSERT,   KC_LGUI, KC_LSHIFT,
-                                                                       KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                       KC_TRANSPARENT,
-                                                                   KC_DELETE, KC_LCTL, KC_TRANSPARENT,
+    KC_TRNS, KC_F1,       KC_F2,     KC_F3,   KC_F4,     KC_F5,   KC_TRNS,
+    KC_TRNS, KC_EXLM,     KC_AT,     KC_UP,   KC_LCBR,   KC_RCBR, KC_TRNS,
+    KC_TRNS, KC_HASH,     KC_LEFT,   KC_DOWN, KC_RIGHT,  KC_DLR,
+    KC_TRNS, KC_LBRC,     KC_RBRC,   KC_LPRN, KC_RPRN,   KC_AMPR, KC_TRNS,
+    KC_TRNS, KC_ESCAPE,   KC_INSERT, KC_LGUI, KC_LSFT,
+                                                         KC_TRNS, KC_TRNS,
+                                                                  KC_TRNS,
+                                              KC_DELETE, KC_LCTL, KC_TRNS,
 
-    KC_TRANSPARENT,      KC_F6,     KC_F7,     KC_F8,  KC_F9, KC_F10,    KC_F11,
+    KC_TRNS,             KC_F6,     KC_F7,     KC_F8,  KC_F9, KC_F10,    KC_F11,
     MT(KC_END, KC_PSCR), KC_PGUP,   KC_7,      KC_8,   KC_9,  KC_ASTR,   KC_F12,
-                         KC_PGDOWN, KC_4,      KC_5,   KC_6,  KC_PLUS,   KC_TRANSPARENT,
-    KC_PSCR,             KC_GRAVE,  KC_1,      KC_2,   KC_3,  KC_BSLASH, KC_TRANSPARENT,
-                                     KC_TRANSPARENT, KC_DOT, KC_0,  KC_EQUAL,  KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_LALT,        KC_SPACE),
+                         KC_PGDN, KC_4,      KC_5,   KC_6,  KC_PLUS,   KC_TRNS,
+    KC_PSCR,             KC_GRAVE,  KC_1,      KC_2,   KC_3,  KC_BSLS, KC_TRNS,
+                                    KC_TRNS, KC_DOT, KC_0,  KC_EQUAL,  KC_TRNS,
+    KC_TRNS, KC_TRNS,
+    KC_TRNS,
+    KC_TRNS, KC_LALT,        KC_SPACE),
 
 /* 2: Lower
  *
@@ -141,23 +141,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `--------------------'
  */
   [LOWER] = LAYOUT_ergodox(
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_MS_ACCEL0,   KC_MS_ACCEL1,   KC_MS_ACCEL2,   KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_MS_UP,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                    KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                                    KC_TRANSPARENT,
-                                                                            KC_MS_BTN2, KC_MS_BTN1, KC_TRANSPARENT,
+    KC_TRNS, KC_TRNS, KC_MS_ACCEL0, KC_MS_ACCEL1, KC_MS_ACCEL2, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS,      KC_MS_UP,     KC_TRNS,      KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_MS_LEFT,   KC_MS_DOWN,   KC_MS_RIGHT,  KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS,      KC_TRNS,      KC_TRNS,      KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS,      KC_TRNS,      KC_TRNS,
+                                                                KC_TRNS, KC_TRNS,
+                                                                         KC_TRNS,
+                                                 KC_MS_BTN2, KC_MS_BTN1, KC_TRNS,
 
-    RGB_TOG,        RGB_HUI,        RGB_HUD,        RGB_VAD,        RGB_VAI,        RGB_MOD,        RGB_SLD,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, TO(GAMX),
-                    KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_TRANSPARENT, TO(GAMZ),
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, TO(GAMY),
-                                    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+    RGB_TOG, RGB_HUI, RGB_HUD, RGB_VAD,  RGB_VAI, RGB_MOD, RGB_SLD,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, TO(GAMX),
+             KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_TRNS, TO(GAMZ),
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, TO(GAMY),
+                               KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     RGB_FFA500, RGB_008000,
     RGB_800080,
-    RGB_FF0000, KC_TRANSPARENT, KC_TRANSPARENT),
+    RGB_FF0000, KC_TRNS, KC_TRNS),
 
 /* 3: Gaming Layer
  *
@@ -181,19 +181,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `--------------------'
  */
   [GAMY] = LAYOUT_ergodox(
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                    KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                                    KC_TRANSPARENT,
-                                                                          TO(BASE), KC_TRANSPARENT, KC_TRANSPARENT,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                                                 KC_TRNS, KC_TRNS,
+                                                          KC_TRNS,
+                                       TO(BASE), KC_TRNS, KC_TRNS,
 
     LCTL(KC_T),   KC_F1,       KC_F2, KC_F3, KC_F4,  KC_F5,     KC_F6,
     KC_T,         KC_KP_MINUS, KC_7,  KC_8,  KC_9,   KC_0,      KC_EQUAL,
                   KC_1,        KC_2,  KC_3,  KC_4,   KC_5,      KC_6,
-    LSFT(KC_TAB), KC_TAB,      KC_Q,  KC_W,  KC_E,   KC_GRAVE,  KC_RSHIFT,
+    LSFT(KC_TAB), KC_TAB,      KC_Q,  KC_W,  KC_E,   KC_GRAVE,  KC_RSFT,
                                KC_X,  KC_S,  KC_V,   DODGEJUMP, KC_ESCAPE,
     KC_M, LCTL(KC_LEFT),
     KC_R,
@@ -221,16 +221,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `--------------------'
  */
   [GAMZ] = LAYOUT_ergodox(
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                    KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                                    KC_TRANSPARENT,
-                                                                          TO(BASE), KC_TRANSPARENT, KC_TRANSPARENT,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                                                 KC_TRNS, KC_TRNS,
+                                                          KC_TRNS,
+                                       TO(BASE), KC_TRNS, KC_TRNS,
 
-    TO(BASE),  KC_F6,   KC_F7,   KC_F8, KC_F9, KC_ENTER, KC_BSPACE,
+    TO(BASE),  KC_F6,   KC_F7,   KC_F8, KC_F9, KC_ENTER, KC_BSPC,
     KC_GRAVE,  KC_7,    KC_8,    KC_9,  KC_0,  KC_MINUS, KC_EQUAL,
                KC_1,    KC_2,    KC_3,  KC_4,  KC_5,     KC_6,
     KC_Z,      KC_TAB,  KC_Q,    KC_W,  KC_E,  KC_R,     KC_T,
@@ -261,23 +261,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `--------------------'
  */
   [GAMX] = LAYOUT_ergodox(
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                    KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                                    KC_TRANSPARENT,
-                                                                          TO(BASE), KC_TRANSPARENT, KC_TRANSPARENT,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                                                KC_TRNS, KC_TRNS,
+                                                         KC_TRNS,
+                                      TO(BASE), KC_TRNS, KC_TRNS,
 
     KC_GRAVE,  KC_1, KC_2, KC_3, KC_4, KC_5,    KC_6,
     KC_TAB,    KC_Q, KC_W, KC_E, KC_R, KC_T,    KC_7,
                KC_A, KC_S, KC_D, KC_F, KC_G,    KC_8,
-    KC_RSHIFT, KC_Z, KC_X, KC_C, KC_V, KC_B,    KC_9,
+    KC_RSFT,   KC_Z, KC_X, KC_C, KC_V, KC_B,    KC_9,
                      KC_A, KC_S, KC_D, KC_LCTL, KC_ESC,
     KC_M, KC_I,
     KC_I,
-    KC_P, KC_SPACE, KC_LSHIFT),
+    KC_P, KC_SPACE, KC_LSFT),
 };
 
 const uint16_t PROGMEM fn_actions[] = {
