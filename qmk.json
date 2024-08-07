@@ -3,7 +3,9 @@
     "build_targets": [
         ["atreus", "zenlor"]
         ["ergodox_ez", "zenlor"],
+        ["ergodox_ez", "via"],
         ["mechmini/v2", "atreus"],
-        ["mechmini/v2", "zenlor"]
+        ["mechmini/v2", "zenlor"],
+        ["mechmini/v2", "via"]
     ]
 }
