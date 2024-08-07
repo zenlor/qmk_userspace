@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_RBRC,    KC_6,     KC_7,     KC_8,     KC_9,      KC_0,    KC_F5,
     KC_RCBR,    KC_Y,     KC_U,     KC_I,     KC_O,      KC_P,    LGUI(KC_GRAVE),
                 KC_H,     KC_J,     KC_K,     KC_L,      KC_SCLN, RCTL(KC_P),
-    KC_RPRN,    KC_N,     KC_M,     KC_COMMA, KC_DOT,    KC_SLSH,  RCTL(RSFT(KC_P)),
+    KC_RPRN,    KC_N,     KC_M,     KC_COMMA, KC_DOT,    KC_SLSH, RCTL(RSFT(KC_P)),
     MO(RAISE),  KC_MINUS, KC_QUOTE, KC_ENTER, MO(LOWER),
 
     KC_PGUP,   KC_LCTL,
@@ -110,10 +110,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                   KC_TRNS,
                                               KC_DELETE, KC_LCTL, KC_TRNS,
 
-    KC_TRNS,             KC_F6,     KC_F7,     KC_F8,  KC_F9, KC_F10,    KC_F11,
-    MT(KC_END, KC_PSCR), KC_PGUP,   KC_7,      KC_8,   KC_9,  KC_ASTR,   KC_F12,
+    KC_TRNS,             KC_F6,     KC_F7,   KC_F8,  KC_F9, KC_F10,    KC_F11,
+    MT(KC_END, KC_PSCR), KC_PGUP,   KC_7,    KC_8,   KC_9,  KC_ASTR,   KC_F12,
                          KC_PGDN, KC_4,      KC_5,   KC_6,  KC_PLUS,   KC_TRNS,
-    KC_PSCR,             KC_GRAVE,  KC_1,      KC_2,   KC_3,  KC_BSLS, KC_TRNS,
+    KC_PSCR,             KC_GRAVE,  KC_1,    KC_2,   KC_3,  KC_BSLS, KC_TRNS,
                                     KC_TRNS, KC_DOT, KC_0,  KC_EQUAL,  KC_TRNS,
     KC_TRNS, KC_TRNS,
     KC_TRNS,

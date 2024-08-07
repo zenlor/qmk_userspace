@@ -1,1 +1,2 @@
+RGB_LIGHT_ENABLE = yes
 VIA_ENABLE = yes
