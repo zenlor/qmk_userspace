@@ -4,6 +4,7 @@
         ["atreus", "zenlor"]
         ["ergodox_ez", "zenlor"],
         ["ergodox_ez", "via"],
+        ["ergodox_ez/shine", "via"],
         ["mechmini/v2", "atreus"],
         ["mechmini/v2", "zenlor"],
         ["mechmini/v2", "via"]
