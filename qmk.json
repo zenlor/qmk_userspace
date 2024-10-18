@@ -1,7 +1,8 @@
 {
     "userspace_version": "1.0",
     "build_targets": [
-        ["atreus", "zenlor"]
+        ["atreus", "via"],
+        ["atreus", "zenlor"],
         ["ergodox_ez", "zenlor"],
         ["ergodox_ez", "via"],
         ["ergodox_ez/shine", "via"],
